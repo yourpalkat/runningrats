@@ -1,56 +1,56 @@
 .contact-form {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 25px;
-	margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 25px;
+  margin-bottom: 50px;
 }
 
 .full-width {
-	grid-column: 1 / -1;
+  grid-column: 1 / -1;
 }
 
 .input-label {
-	display: block;
-	color: $ltblue;
-	font-family: $base-font;
-	font-size: 0.8rem;
-	font-weight: 400;
-	margin-top: 20px;
-	margin-bottom: 10px;
+  display: block;
+  color: $ltblue;
+  font-family: $base-font;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .form-error {
-	font-size: 0.8rem;
-	margin-top: 5px;
-	color: red;
-	font-weight: 700;
-	opacity: 0;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: red;
+  font-weight: 700;
+  opacity: 0;
 }
 
-.form-input, .form-body {
+.form-input,
+.form-body {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
 
-	width: 100%;
-	padding: 5px 10px;
-	border: none;
-
-	color: $ltblue;
-	font-family: $base-font;
-	font-style: italic;
-	font-size: 1.0rem;
-	&::placeholder {
-		color: $ltblue;
-		opacity: 1;
-	}
-	&:-ms-input-placeholder {
-		color: $ltblue;
-	}
-	&::ms-input-placeholder {
-		color: $ltblue;
-	}
+  color: $ltblue;
+  font-family: $base-font;
+  font-style: italic;
+  font-size: 1rem;
+  &::placeholder {
+    color: $ltblue;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $ltblue;
+  }
+  &::ms-input-placeholder {
+    color: $ltblue;
+  }
 }
 
 .form-input:invalid {
-	margin: 3px solid red;
+  margin: 3px solid red;
 }
 
 // .form-input:invalid + .form-error {
@@ -58,21 +58,21 @@
 // }
 
 .submit-button {
-	background-color: $ltblue;
-	border: none;
-	border-radius: 15px;
-	color: #ffffff;
-	font-family: $base-font;
-	font-size: 1.0rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+  background-color: $ltblue;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  font-family: $base-font;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
-	justify-self: start;
-	padding: 10px 40px;
-	transition: all ease .3s;
-	&:hover {
-		background-color: $vltblue;
-		color: $mdblue;
-	}
+  justify-self: start;
+  padding: 10px 40px;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: $vltblue;
+    color: $mdblue;
+  }
 }

@@ -1,140 +1,149 @@
-//flexbox fallback for the card layout, if grid isn't supported
-
 .route-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .route-card {
-	flex-basis: 205px;
-	flex-grow: 1;
-	flex-shrink: 0;
-	margin: 0 25px 25px 0;
+  flex-basis: 205px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 0 25px 25px 0;
 }
 
 @supports (display: grid) {
-	.route-wrapper {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .route-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
-		grid-gap: 25px;
-		margin: 20px 0;
-	}
+    grid-gap: 25px;
+    margin: 20px 0;
+  }
 
-	.route-card {
-		margin: 0;
-	}
+  .route-card {
+    margin: 0;
+  }
 }
 
 .route-card {
-	position: relative;
-	min-height: 250px;
-	&:hover .route-card-front {
-		transform: rotateY(-180deg);
-	}
-	&:hover .route-card-back {
-		transform: rotateY(0deg);  
-	}
+  position: relative;
+  min-height: 250px;
+
+  &:hover .route-card-front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover .route-card-back {
+    transform: rotateY(0deg);
+  }
 }
 
 .route-card-front img {
-	width: 100%;
+  width: 100%;
 }
 
-.route-card-front, .route-card-back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-	transition: ease-in-out .5s;
+.route-card-front,
+.route-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: ease-in-out 0.5s;
 
-	background-color: $vltblue;
-	// border: 1px solid $ltblue;
-	border-radius: 10px; 
-	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.25);
-	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.25);
+  background-color: $vltblue;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
 
-	overflow: hidden;
-	& h5 {
-		padding: 0 15px;
-	}
+  overflow: hidden;
+
+  & h5 {
+    padding: 0 15px;
+  }
 }
 
 .card-overlay {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 1em;
-	background-color: rgba(255, 255, 255, 0.75);
-	border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	& h4 {
-		margin-top: 0;
-	}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h4 {
+    margin-top: 0;
+  }
 }
 
 .route-card-back {
-	padding: 15px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-	transform: rotateY(180deg);
-	& h4 {
-		margin-top: 0;
-	}
-	& h5 {
-		margin-top: 0.25em;
-	}
-	& h6 {
-		margin-top: 1em;
-	}
-	& p {
-		margin: 0.5em 0 0;
-	}
+  transform: rotateY(180deg);
+
+  & h4 {
+    margin-top: 0;
+  }
+
+  & h5 {
+    margin-top: 0.25em;
+  }
+
+  & h6 {
+    margin-top: 1em;
+  }
+
+  & p {
+    margin: 0.5em 0 0;
+  }
 }
 
 .route-links {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	padding: 0;
-	margin: 10px 0 0;
-	& li {
-		margin: 10px;
-	}
-	& a {
-		background-color: $mdblue;
-		color: #ffffff;
-		text-decoration: none;
-		font-weight: 700;
-		padding: 10px;
-		border-radius: 15px;
-		&:hover {
-			background-color: $ltblue;
-		}
-	}
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+
+  & li {
+    margin: 10px;
+  }
+
+  & a {
+    background-color: $mdblue;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 15px;
+
+    &:hover {
+      background-color: $ltblue;
+    }
+  }
 }
 
 .download-link {
-	background-color: $mdblue;
-	color: #ffffff;
-	font-size: 0.65rem;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: 700;
-	padding: 10px;
-	border-radius: 15px;
-	&:hover {
-		background-color: $ltblue;
-	}
-}
+  background-color: $mdblue;
+  color: #ffffff;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 15px;
 
+  &:hover {
+    background-color: $ltblue;
+  }
+}

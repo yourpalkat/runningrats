@@ -1,70 +1,71 @@
 .topline-navbar {
-	background-color: $dkblue;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	padding: 15px 0;
-	z-index: 99;
+  background-color: $dkblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  z-index: 99;
 
-	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.25);
-	box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 nav ul {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-	padding: 0;
-	width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .nav-spacer {
-	width: 80px;
-	&:after {
-		@include logo-circle($dkblue, white);
-	}
+  width: 80px;
+  &:after {
+    @include logo-circle($dkblue, white);
+  }
 }
 
 .hamburger {
-	text-align: right;
-	color: $vltblue;
-	font-size: 1.3rem;
-	display: none;
+  text-align: right;
+  color: $vltblue;
+  font-size: 1.3rem;
+  display: none;
 }
 
 .exit-responsive {
-	font-size: 1.3rem;
-	background-color: $dkblue;
+  font-size: 1.3rem;
+  background-color: $dkblue;
 }
 
-.exit-responsive, .home-link {
-	display: none;
+.exit-responsive,
+.home-link {
+  display: none;
 }
 
 header {
-	position: relative;
-	margin-top: 30px;
+  position: relative;
+  margin-top: 30px;
 }
 
 .headline-wrapper {
-	position: absolute;
-	top: 20px;
-	left: 50%;
-	transform: translateX(-50%);
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main-carousel {
-	min-height: 28vw;
-	max-height: 410px;
-	// background-image: url("../images/banner-1.jpg");
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	& img {
-		min-width: 100vw;
-	}
+  min-height: 28vw;
+  max-height: 410px;
+  // background-image: url("../images/banner-1.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  & img {
+    min-width: 100vw;
+  }
 }
 
 // .carousel-cell {
@@ -74,8 +75,8 @@ header {
 
 /* position dots in carousel */
 .flickity-page-dots {
-	bottom: -22px;
-	z-index: 40;
+  bottom: -22px;
+  z-index: 40;
 }
 /* circles */
 .flickity-page-dots .dot {

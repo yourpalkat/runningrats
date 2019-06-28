@@ -1,44 +1,47 @@
-var jquery = require("jquery");
+let jquery = require("jquery");
 window.$ = window.jQuery = jquery;
-var jQueryBridget = require('jquery-bridget');
-var Flickity = require('flickity');
-jQueryBridget( 'flickity', Flickity, $ );
+let jQueryBridget = require('jquery-bridget');
+let Flickity = require('flickity');
+jQueryBridget('flickity', Flickity, $);
 
 require('@fancyapps/fancybox');
 require('flickity-fade');
 require('jquery-csv');
 require('spectragram');
 
-var data;
-var routeData;
-let $carousel = $('.main-carousel');
-
-$('[data-fancybox="gallery"]').fancybox({});
-
-$('.hamburger').on('click', function () {
-  $('.main-menu').toggleClass('show');
+// GENERAL
+document.querySelector('.hamburger').addEventListener('click', () => {
+  document.querySelector('.main-menu').classList.toggle('show');
 });
 
-$('.exit-responsive').on('click', function () {
-  $('.main-menu').toggleClass('show');
+document.querySelector('.exit-responsive').addEventListener('click', () => {
+  document.querySelector('.main-menu').classList.toggle('show');
 });
 
-$carousel.on('ready.flickity', function() {});
-$carousel.flickity({
+// CAROUSEL
+let carousel = $('.main-carousel');
+carousel.on('ready.flickity', function () {});
+carousel.flickity({
   prevNextButtons: false,
   autoPlay: 5000,
-  fade: true
+  fade: true,
+  resize: true
 });
-$('.main-carousel').flickity('resize');
 
+// INSTAGRAM
 jQuery.fn.spectragram.accessData = {
   accessToken: '1991068484.b4f806b.bb8f883fbf7e40deb854feaddaf026ce'
 };
+
 $('.insta-embed').spectragram('getUserFeed', {
-  size: 'small',
   max: 4,
+  size: 'small',
   wrapEachWith: '<div class="insta-photo"></div>'
 });
+
+// AJAX
+let data;
+let routeData;
 
 $.ajax({
   type: "GET",
@@ -50,9 +53,18 @@ $.ajax({
   }
 });
 
-function generateCalendar(data) {
-  var html = '';
+$.ajax({
+  type: "GET",
+  url: "routes.csv",
+  dataType: "text",
+  success: function (response) {
+    routeData = $.csv.toArrays(response);
+    generateRouteCards(routeData);
+  }
+});
 
+function generateCalendar(data) {
+  let html = '';
   if (typeof (data[0]) === 'undefined') {
     return null;
   } else {
@@ -79,19 +91,9 @@ function generateCalendar(data) {
   }
 }
 
-$.ajax({
-  type: "GET",
-  url: "routes.csv",
-  dataType: "text",
-  success: function (response) {
-    routeData = $.csv.toArrays(response);
-    generateRouteCards(routeData);
-  }
-});
-
 function generateRouteCards(routeData) {
-  var html = '';
-  var currentRoute = {};
+  let html = '';
+  let currentRoute = {};
   if (typeof (routeData[0]) === 'undefined') {
     return null;
   } else {
@@ -104,6 +106,5 @@ function generateRouteCards(routeData) {
       });
       html += '</ul>';
     });
-    // $('.route-wrapper').append(html);
   }
 }
