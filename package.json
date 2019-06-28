@@ -1,0 +1,32 @@
+{
+  "name": "runningrats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/derekmurr/runningrats.git",
+  "author": "Tej <tejpartapsingh91@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "shx rm -rf dist/*",
+    "dev": "yarn run prebuild && parcel public/**/*.pug",
+    "build": "parcel build public/**/*.pug --public-url ."
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-eslint": "^1.0.7",
+    "parcel-plugin-imagemin": "^3.0.0",
+    "pug": "^2.0.4",
+    "sass": "^1.22.1",
+    "shx": "^0.3.2"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "flickity": "^2.2.0",
+    "flickity-fade": "^1.0.0",
+    "jquery": "^3.4.1",
+    "jquery-bridget": "^2.0.1",
+    "jquery-csv": "^1.0.3",
+    "parcel-plugin-inliner": "^1.0.10",
+    "parcel-plugin-static-files-copy": "^2.1.2",
+    "spectragram": "^1.1.0"
+  }
+}

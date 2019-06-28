@@ -1,0 +1,139 @@
+extends head.pug
+
+block title
+  title Running Rats Run Club | Toronto, Canada
+
+block content
+  header
+    .topline-navbar
+      .wrapper
+        nav
+          .hamburger
+            i.fas.fa-bars
+            span.visually-hidden Menu
+          ul.main-menu
+            li.exit-responsive
+              i.fas.fa-times
+              span.visually-hidden Close
+            li.home-link
+              a.header-nav-link(href='index.pug') home
+            li
+              a.header-nav-link(href='about.pug')
+                | about 
+                span.light the rats
+            li
+              a.header-nav-link(href='tuesday.pug')
+                span.light tuesday
+                |  runs
+            li.nav-logo
+              a.header-home-link(href='index.pug')
+                .nav-spacer
+            li
+              a.header-nav-link(href='crews.pug')
+                span.light run
+                |  crews
+            li
+              a.header-nav-link(href='contact.pug')
+                | contact 
+                span.light us
+    .main-carousel
+      .carousel-cell
+        img(src='./images/banner-1.jpg', alt='A large group of the Running Rats, heading west on Wellington in the summer sunset')
+      .carousel-cell
+        img(src='./images/banner-2.jpg', alt='Two runners headed north on the Puente de Luz bridge, framed symmetrically by the bridge and towers behind them')
+      .carousel-cell
+        img(src='./images/banner-3.jpg', alt='A group of the Running Rats crossing Spadina Avenue westbound, shot from a low angle and framed by the wide street behind')
+    .wrapper.headline-wrapper
+      h1
+        | Running Rats 
+        span.light Toronto
+  main
+    section.med-blue
+      .wrapper
+        h2.white-text
+          span.light We are the
+          |  Running Rats
+        p.intro-text
+          | Founded in 2002, we’re one of Toronto’s best run clubs. We welcome runners of all abilities, from people training for their first 10K ever, to sub-3-hour Boston qualifiers. We’re a dedicated group who meet every week year-round, but we’re here to have fun – all those weekly miles are more fun with friends.
+        p.intro-text
+          | Plus we have special events all year long: discounted shopping days, shoe demo days, post-race socials, volunteer opportunities and more. And the second Tuesday of the month is always social night: join us for a beverage after the run. (To be honest, sometimes people skip the run and just go for the social. Hey, it happens.)
+        p.intro-text Drop in any Tuesday and join us!
+    section.light-blue
+      .wrapper
+        h3
+          span.light Run with us
+          |  every Tuesday!
+        p
+          | Join us on our free weekly run! We meet every Tuesday at 6:05pm at the downtown Toronto Running Room, located on Yonge Street just south of King. We run all year long, rain or shine, with 7K, 10K and 13K options and people running a range of paces every week. We’re a friendly, inclusive group: all ages, genders and paces welcome. All we ask is that you can complete 7K comfortably.
+        p.center
+          a.cta(href='tuesday.pug') Click here to learn more!
+    section.white
+      .wrapper
+        .two-column
+          .span-two
+            h3
+              span.light Run with us
+              |  online!
+          .span-one
+            p
+              | We’re not just social in person! Follow us on Instagram to see all the shots Mike gets with his, uh, unique GoPro technique, join our Rats-only Facebook group to know the week’s route and learn about upcoming special events, and add your kilometres to ours and get some kudos by joining our Strava club!
+            ul.body-social-links
+              li
+                a(href='https://twitter.com/runningrats')
+                  i.fab.fa-twitter
+                  span.visually-hidden Twitter
+              li
+                a(href='https://www.facebook.com/groups/RunningRatsMembers/')
+                  i.fab.fa-facebook-f
+                  span.visually-hidden Facebook
+              li
+                a(href='https://www.instagram.com/runningratsto/')
+                  i.fab.fa-instagram
+                  span.visually-hidden Instagram
+              li
+                a(href='https://www.strava.com/clubs/runningrats')
+                  i.fab.fa-strava
+                  span.visually-hidden Strava
+            .strava-embed
+              iframe(allowtransparency='true', scrolling='no', src='https://www.strava.com/clubs/runningrats/latest-rides/82f62e35db7a60448b4cb28dd95d80c82cff2824?show_rides=false', width='300', height='160', frameborder='0')
+          .span-one.insta-embed
+            // #access_token=1991068484.b4f806b.bb8f883fbf7e40deb854feaddaf026ce
+            h5.span-two The latest on Instagram!
+        .two-column
+          .span-two
+            h3
+              span.light Rats gear
+              |  available!
+          .span-one
+            p
+              | Rats singlets are available for purchase. Logos on the front and the back, so people know who just passed them! Perfect for race day: lightweight and with a handy horizontal line and centre mark so you’ll never pin your number on crooked again. Light long-sleeved shirts are also available, great for those crisp fall mornings.
+            p
+              a.body-link(href='contact.pug') Email us
+              |  or talk to Mike on Tuesday to learn more.
+          .span-one
+            img(src='./images/rats-singlet.png', alt='Illustration of the Running Rats singlet currently available')
+  footer
+    .wrapper.footer-wrapper
+      ul.footer-social-links
+        li
+          a(href='https://twitter.com/runningrats')
+            i.fab.fa-twitter
+            span.visually-hidden Twitter
+        li
+          a(href='https://www.facebook.com/groups/RunningRatsMembers/')
+            i.fab.fa-facebook-f
+            span.visually-hidden Facebook
+        li
+          a(href='https://www.instagram.com/runningratsto/')
+            i.fab.fa-instagram
+            span.visually-hidden Instagram
+        li
+          a(href='https://www.strava.com/clubs/runningrats')
+            i.fab.fa-strava
+            span.visually-hidden Strava
+      .footer-copyright
+        | Copyright © Running Rats Run Club.
+      .footer-sponsor
+        figure
+          figcaption Sponsored by:
+          img(src='./images/rrlogo.png', alt='Running Room logo')

@@ -1,0 +1,86 @@
+extends head.pug
+
+block title
+  title Running Rats Run Club | Rat Tuesdays
+
+block content
+  .topline-navbar
+    .wrapper
+      nav
+        .hamburger
+          i.fas.fa-bars
+          span.visually-hidden Menu
+        ul.main-menu
+          li.exit-responsive
+            i.fas.fa-times
+            span.visually-hidden Close
+          li.home-link
+            a.header-nav-link(href='index.pug') home
+          li
+            a.header-nav-link(href='about.pug')
+              | about 
+              span.light the rats
+          li
+            a.header-nav-link(href='tuesday.pug')
+              span.light tuesday
+              |  runs
+          li.nav-logo
+            a.header-home-link(href='index.pug')
+              .nav-spacer
+          li
+            a.header-nav-link(href='crews.pug')
+              span.light run
+              |  crews
+          li
+            a.header-nav-link(href='contact.pug')
+              | contact 
+              span.light us
+  main
+    section.med-blue.first-section
+      .wrapper
+        h2.white-text
+          span.light Thank
+          |  you!
+        p.intro-text
+          | Hey, thanks for sending us a line! We’ll be sure to get back to you as soon as we can.
+        p.intro-text You’ve probably got enough time to get in an easy 5K while you wait. 
+        p.intro-text
+          | And maybe a milkshake too. Hey, recovery is important.
+          br
+          br
+          br
+          br
+    section.white
+      .wrapper
+        h3
+          span.light Join us
+          |  every Tuesday!
+        p
+          | Join us on our free weekly run! We meet every Tuesday at 6:05pm at the downtown Toronto Running Room, located on Yonge Street just south of King. We run all year long, rain or shine, with 7K, 10K and 13K options and people running a range of paces every week. We’re a friendly, inclusive group: all ages, genders and paces welcome. All we ask is that you can complete 7K comfortably.
+        p.center
+          a.cta(href='tuesday.pug') Click here to learn more!
+  footer
+    .wrapper.footer-wrapper
+      ul.footer-social-links
+        li
+          a(href='https://twitter.com/runningrats')
+            i.fab.fa-twitter
+            span.visually-hidden Twitter
+        li
+          a(href='https://www.facebook.com/groups/RunningRatsMembers/')
+            i.fab.fa-facebook-f
+            span.visually-hidden Facebook
+        li
+          a(href='https://www.instagram.com/runningratsto/')
+            i.fab.fa-instagram
+            span.visually-hidden Instagram
+        li
+          a(href='https://www.strava.com/clubs/runningrats')
+            i.fab.fa-strava
+            span.visually-hidden Strava
+      .footer-copyright
+        | Copyright © Running Rats Run Club.
+      .footer-sponsor
+        figure
+          figcaption Sponsored by:
+          img(src='./images/rrlogo.png', alt='Running Room logo')

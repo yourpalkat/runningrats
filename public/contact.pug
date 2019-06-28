@@ -1,0 +1,90 @@
+extends head.pug
+
+block title
+  title Running Rats Run Club | Contact Us
+
+block content
+  .topline-navbar
+    .wrapper
+      nav
+        .hamburger
+          i.fas.fa-bars
+          span.visually-hidden Menu
+        ul.main-menu
+          li.exit-responsive
+            i.fas.fa-times
+            span.visually-hidden Close
+          li.home-link
+            a.header-nav-link(href='index.pug') home
+          li
+            a.header-nav-link(href='about.pug')
+              | about 
+              span.light the rats
+          li
+            a.header-nav-link(href='tuesday.pug')
+              span.light tuesday
+              |  runs
+          li.nav-logo
+            a.header-home-link(href='index.pug')
+              .nav-spacer
+          li
+            a.header-nav-link(href='crews.pug')
+              span.light run
+              |  crews
+          li
+            a.header-nav-link(href='contact.pug')
+              | contact 
+              span.light us
+  main
+    section.med-blue.first-section
+      .wrapper
+        h2.white-text
+          span.light Contact
+          |  us!
+        p.intro-text
+          | Questions about our weekly meet-ups? About us? About running? About astrophysics? (Well, maybe not that last one.) Please get in touch!
+        form.contact-form(action='http://www.focuspocus.io/magic/88542568e8cea4c92d11c8df4748ddb7', method='POST')
+          .input-group
+            label.input-label(for='email') Please enter your email address
+            input#email.form-input(type='email', name='email', placeholder='Email address', required='')
+          .input-group
+            label.input-label(for='subject') Please enter a subject
+            input#subject.form-input(type='text', name='subject', placeholder='Subject of email', required='')
+          .input-group.full-width
+            label.input-label(for='message') Please enter a message
+            textarea#form-body.form-body(name='message', cols='30', rows='10', placeholder='Enter your message here!', required='')
+          button.submit-button(type='submit') Send message
+    section.white
+      .wrapper
+        h3
+          span.light Join us
+          |  every Tuesday!
+        p
+          | Join us on our free weekly run! We meet every Tuesday at 6:05pm at the downtown Toronto Running Room, located on Yonge Street just south of King. We run all year long, rain or shine, with 7K, 10K and 13K options and people running a range of paces every week. We’re a friendly, inclusive group: all ages, genders and paces welcome. All we ask is that you can complete 7K comfortably.
+        p.center
+          a.cta(href='tuesday.pug') Click here to learn more!
+  footer
+    .wrapper.footer-wrapper
+      ul.footer-social-links
+        li
+          a(href='https://twitter.com/runningrats')
+            i.fab.fa-twitter
+            span.visually-hidden Twitter
+        li
+          a(href='https://www.facebook.com/groups/RunningRatsMembers/')
+            i.fab.fa-facebook-f
+            span.visually-hidden Facebook
+        li
+          a(href='https://www.instagram.com/runningratsto/')
+            i.fab.fa-instagram
+            span.visually-hidden Instagram
+        li
+          a(href='https://www.strava.com/clubs/runningrats')
+            i.fab.fa-strava
+            span.visually-hidden Strava
+      .footer-copyright
+        | Copyright © Running Rats Run Club.
+      .footer-sponsor
+        figure
+          figcaption Sponsored by:
+          img(src='./images/rrlogo.png', alt='Running Room logo')

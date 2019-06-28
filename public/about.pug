@@ -1,0 +1,130 @@
+extends head.pug
+
+block title
+  title Running Rats Run Club | About the Rats
+
+block content
+  .topline-navbar
+    .wrapper
+      nav
+        .hamburger
+          i.fas.fa-bars
+          span.visually-hidden Menu
+        ul.main-menu
+          li.exit-responsive
+            i.fas.fa-times
+            span.visually-hidden Close
+          li.home-link
+            a.header-nav-link(href='index.pug') home
+          li
+            a.header-nav-link(href='about.pug')
+              | about 
+              span.light the rats
+          li
+            a.header-nav-link(href='tuesday.pug')
+              span.light tuesday
+              |  runs
+          li.nav-logo
+            a.header-home-link(href='index.pug')
+              .nav-spacer
+          li
+            a.header-nav-link(href='crews.pug')
+              span.light run
+              |  crews
+          li
+            a.header-nav-link(href='contact.pug')
+              | contact 
+              span.light us
+  main
+    section.med-blue.first-section
+      .wrapper
+        h2.white-text
+          span.light About the
+          |  Rats
+        p.intro-text
+          | The Rats started in 2002. A group of spirited runners from Toronto were training for that spring's Ottawa Marathon as part of the Commerce Court Running Room's training clinic (back when there was a Running Room in Commerce Court). After the race, the group just kept on running together, coming up with the name that summer and boasting a whole dozen members. By the winter, Rat Tuesdays were officially a thing, and the rest is history. Over fifteen years later, we're still running strong and when the weather's nice we can easily get 30 or 40 people running through the Financial District on a Tueday evening. Here's to fifteen more!
+    section.light-blue
+      .wrapper
+        h3 Gallery
+        p
+          | Okay, we all tease Mike for holding his GoPro camera in his mouth when he runs. But the fact is, the guy gets some great photos out of it, so who are we to argue with success! Here's a sample of some of our adventures together.
+      .gallery
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-1.jpg')
+            img(src='./images/gallery-1-t.jpg', alt='30 or so Running Rats waiting for a traffic light at the corner of Church and Esplanade, in front a bar, appropriately enough')
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-2.jpg')
+            img(src='./images/gallery-2-t.jpg', alt="Close shot of two runners laughing while moving fast down Queen's Quay")
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-3.jpg')
+            img(src='./images/gallery-3-t.jpg', alt='Runners smiling and waving, heading over the wooden bridge at Trillium Park')
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-4.jpg')
+            img(src='./images/gallery-4-t.jpg', alt="A large group of runners crossing Queen's Quay at Yonge, the sun setting dramatically between condo towers behind them")
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-5.jpg')
+            img(src='./images/gallery-5-t.jpg', alt='Three runners moving through a park at sunset, too quickly to keep in focus')
+        figure.gallery-item.tall
+          a(data-fancybox='gallery', href='./images/gallery-6.jpg')
+            img(src='./images/gallery-6-t.jpg', alt="A woman running along the water's edge in the summertime, the downtown skyline behind her")
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-7.jpg')
+            img(src='./images/gallery-7-t.jpg', alt='A man running, laughing, past a graffiti mural in the east end of the city')
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-8.jpg')
+            img(src='./images/gallery-8-t.jpg', alt='A bunch of Rats taking a break to pose in the colorful Muskoka chairs on the downtown waterfront')
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-9.jpg')
+            img(src='./images/gallery-9-t.jpg', alt='Two runners, arms outstretched, headed north on the Trillium Park waterfront path')
+        figure.gallery-item.tall
+          a(data-fancybox='gallery', href='./images/gallery-10.jpg')
+            img(src='./images/gallery-10-t.jpg', alt='Two runners headed back to the meeting point through a downtown park in the summer evening')
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-11.jpg')
+            img(src='./images/gallery-11-t.jpg', alt="A group of Running Rats pose for a selfie in front of the Princes' Gates at Exhibition Place")
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-12.jpg')
+            img(src='./images/gallery-12-t.jpg', alt='Close up of speedy feet, running across Dundas at University, the sun shining behind')
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-13.jpg')
+            img(src='./images/gallery-13-t.jpg', alt='JC, one of our fast runners, mugs for the camera on the waterfront trail')
+        figure.gallery-item
+          a(data-fancybox='gallery', href='./images/gallery-14.jpg')
+            img(src='./images/gallery-14-t.jpg', alt='Four runners cross the Queen Street bridge over the Don River at sunset')
+        figure.gallery-item.wide
+          a(data-fancybox='gallery', href='./images/gallery-15.jpg')
+            img(src='./images/gallery-15-t.jpg', alt='Two Running Rats, running side-by-side north over the Puente de Luz bridge, framed symmetrically by the elaborate yellow steel bridge structure')
+    section.white
+      .wrapper
+        h3
+          span.light Join us
+          |  every Tuesday!
+        p
+          | Join us on our free weekly run! We meet every Tuesday at 6:05pm at the downtown Toronto Running Room, located on Yonge Street just south of King. We run all year long, rain or shine, with 7K, 10K and 13K options and people running a range of paces every week. We're a friendly, inclusive group: all ages, genders and paces welcome. All we ask is that you can complete 7K comfortably.
+        p.center
+          a.cta(href='tuesday.pug') Click here to learn more!
+  footer
+    .wrapper.footer-wrapper
+      ul.footer-social-links
+        li
+          a(href='https://twitter.com/runningrats')
+            i.fab.fa-twitter
+            span.visually-hidden Twitter
+        li
+          a(href='https://www.facebook.com/groups/RunningRatsMembers/')
+            i.fab.fa-facebook-f
+            span.visually-hidden Facebook
+        li
+          a(href='https://www.instagram.com/runningratsto/')
+            i.fab.fa-instagram
+            span.visually-hidden Instagram
+        li
+          a(href='https://www.strava.com/clubs/runningrats')
+            i.fab.fa-strava
+            span.visually-hidden Strava
+      .footer-copyright
+        | Copyright © Running Rats Run Club.
+      .footer-sponsor
+        figure
+          figcaption Sponsored by:
+          img(src='./images/rrlogo.png', alt='Running Room logo')

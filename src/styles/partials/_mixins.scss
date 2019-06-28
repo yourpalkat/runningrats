@@ -10,9 +10,9 @@
 
 	background-color: $bgcolor;
 	@if $logocolor == blue {
-		background-image: url('../images/rat-logo-blue.png');		
+		background-image: url('./rat-logo-blue.png');
 	} @else {
-		background-image: url('../images/rat-logo-white.png')
+		background-image: url('./rat-logo-white.png')
 	}
 	background-position: center;
 	background-repeat: no-repeat;

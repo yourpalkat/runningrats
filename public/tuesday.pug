@@ -1,0 +1,581 @@
+extends head.pug
+
+block title
+  title Running Rats Run Club | Rat Tuesdays
+
+block content
+  .topline-navbar
+    .wrapper
+      nav
+        .hamburger
+          i.fas.fa-bars
+          span.visually-hidden Menu
+        ul.main-menu
+          li.exit-responsive
+            i.fas.fa-times
+            span.visually-hidden Close
+          li.home-link
+            a.header-nav-link(href='index.pug') home
+          li
+            a.header-nav-link(href='about.pug')
+              | about 
+              span.light the rats
+          li
+            a.header-nav-link(href='tuesday.pug')
+              span.light tuesday
+              |  runs
+          li.nav-logo
+            a.header-home-link(href='index.pug')
+              .nav-spacer
+          li
+            a.header-nav-link(href='crews.pug')
+              span.light run
+              |  crews
+          li
+            a.header-nav-link(href='contact.pug')
+              | contact 
+              span.light us
+  main
+    section.med-blue.first-section
+      .wrapper
+        .two-column
+          .span-two
+            h2.white-text
+              span.light Rat
+              |  Tuesday
+            p.intro-text
+              | “Rat Tuesday” is our weekly group run. Anyone is free to drop in and join! Our club is aimed at those who feel comfortable running 7K or more, continuously, at any pace. Each week our rotating crew of run captains choose routes of 7K, 10K and 13K. Our members run at a range of paces, so you’re likely to find someone going your speed and distance. We also have a Moderate Pacer every week who runs at the pace of the last runner, so no one is left behind.
+          .callout.span-one
+            p
+              span.bold When:
+              |  Every Tuesday, rain, shine or snow! 
+              br
+              span.bold New Guests:
+              |  6:05pm 
+              br
+              span.bold Route Call:
+              |  6:15pm 
+              br
+              span.bold Run:
+              |  6:25pm sharp! 
+              br
+              span.bold Where:
+              |  Downtown Yonge Running Room, 53 Yonge Street
+            p
+              span.bold Second Tuesday of every month:
+              |  Post-run social!
+          .span-one
+            p.intro-text
+              | There are no formal changing facilities available. There are limited washrooms, but it can get busy, so it’s best to come ready to run. You can leave a bag the store, though it’s best to avoid leaving valuables.
+            p.intro-text
+              | It’s free to try and free to join! If it’s your first time, please come around 6:05, introduce yourself, and fill out the sign-up sheet. Run with us three times and you’re a Rat! We’ll add you to the weekly announcement email and our Facebook group so you’ll know about routes and special events.
+    section.white
+      .wrapper
+        h3
+          span.light Rat Tuesday
+          |  Routes
+        p
+          | Variety is the spice of life. We try to change the route up every week; the next route is always announced in our weekly email. Sometimes it’s a one-off, but usually it’s one of the set routes below. Hover over (or tap) a card to see links to view the route on Mapmyrun, or download a route sheet.
+        .route-wrapper
+          // 24 route cards
+          .route-card
+            .route-card-front
+              img(src='./images/1.jpg', alt='Palmerston Avenue')
+              .card-overlay
+                h4 Route 1
+                h5 Palmerston - St. George
+            .route-card-back
+              h4 Route 1
+              h5 Palmerston - St. George
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886697919') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886701981') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886707659') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/1.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/2.jpg', alt='Convocation Hall at the University of Toronto')
+              .card-overlay
+                h4 Route 2
+                h5 University of Toronto
+            .route-card-back
+              h4 Route 2
+              h5 University of Toronto
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886722335') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886725515') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886728993') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/2.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/3.jpg', alt='Christmas lights at Nathan Philips Square')
+              .card-overlay
+                h4 Route 3
+                h5 Christmas Lights
+            .route-card-back
+              h4 Route 3
+              h5 Christmas Lights
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='https://www.mapmyrun.com/routes/fullscreen/2336893135/') 6K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/3.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/4.jpg', alt="Queen's Quay Boulevard on Toronto's waterfront")
+              .card-overlay
+                h4 Route 4
+                h5 Queen's Quay
+            .route-card-back
+              h4 Route 4
+              h5 Queen's Quay
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886733065') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886746221') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886749469') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/4.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/4b.jpg', alt="Queen's Quay Boulevard on Toronto's waterfront")
+              .card-overlay
+                h4 Route 4B
+                h5 Queen's Quay Reversed
+            .route-card-back
+              h4 Route 4B
+              h5 Queen's Quay Reversed
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886733065') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886746221') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/886749469') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/a.jpg', alt="The lift bridge in Toronto's port lands")
+              .card-overlay
+                h4 Route A
+                h5 Docklands
+            .route-card-back
+              h4 Route A
+              h5 Docklands
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903716093') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903716699') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903717097') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/a.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/b.jpg', alt='The Inukshuk sculpture along the Martin Goodman Trail')
+              .card-overlay
+                h4 Route B
+                h5 Martin Goodman West
+            .route-card-back
+              h4 Route B
+              h5 Martin Goodman West
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903717603') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903718237') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903718767') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/b.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/c.jpg', alt='Withrow Park, on Logan Avenue')
+              .card-overlay
+                h4 Route C
+                h5 Logan
+            .route-card-back
+              h4 Route C
+              h5 Logan
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903719443') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903720165') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/903720593') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/c.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/1c.jpg', alt="A busy street in Toronto's Chinatown")
+              .card-overlay
+                h4 Route 1C
+                h5 Spadina-University
+            .route-card-back
+              h4 Route 1C
+              h5 Spadina-University
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905211661') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905213179') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905214585') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/1c.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/2c.jpg', alt='A group of Running Rats on Lakeshore Boulevard')
+              .card-overlay
+                h4 Route 2C
+                h5 Queen's Quay/Strachan/Richmond
+            .route-card-back
+              h4 Route 2C
+              h5 Queen's Quay/Strachan/Richmond
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905392899') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905393511') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905394245') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/3c.jpg', alt="Queen's Park in springtime")
+              .card-overlay
+                h4 Route 3C
+                h5 Queen's Park Circle
+            .route-card-back
+              h4 Route 3C
+              h5 Queen's Park Circle
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905394909') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905395567') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905395971') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/4c.jpg', alt='Two Running Rats on the boardwalk at Harbourfront Centre')
+              .card-overlay
+                h4 Route 4C
+                h5 Queen's Quay/Spadina/Palmerston
+            .route-card-back
+              h4 Route 4C
+              h5 Queen's Quay/Spadina/Palmerston
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905397557') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905397885') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905398443') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/4c.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/5c.jpg', alt='The gates at Trinity-Bellwoods Park')
+              .card-overlay
+                h4 Route 5C
+                h5 Trinity-Bellwoods
+            .route-card-back
+              h4 Route 5C
+              h5 Trinity-Bellwoods
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905398829') 7K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905399155') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905399547') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/5c.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/6c.jpg', alt='The bridge over Rosedale Valley')
+              .card-overlay
+                h4 Route 6C
+                h5 Rosedale Valley Road
+            .route-card-back
+              h4 Route 6C
+              h5 Rosedale Valley Road
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905399927') 7.5K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905400337') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/905400637') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/7.jpg', alt='A group of Running Rats heading north on Bathurst Street')
+              .card-overlay
+                h4 Route 7
+                h5 Bathurst-Church
+            .route-card-back
+              h4 Route 7
+              h5 Bathurst-Church
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/915490807') 8K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/915491377') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/915492101') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/8.jpg', alt='Looking north on Shaw Street towards Davenport Road, Toronto')
+              .card-overlay
+                h4 Route 8
+                h5 Davenport
+            .route-card-back
+              h4 Route 8
+              h5 Davenport
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/960204463') 8K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/960204933') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/960205521') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/9.jpg', alt="A runner on the boardwalk in Toronto's central waterfront")
+              .card-overlay
+                h4 Route 9
+                h5 Harbourfront Tour
+            .route-card-back
+              h4 Route 9
+              h5 Harbourfront Tour
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/1131822241') 8K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/1131823558') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/1131825931') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/10.jpg', alt='Convocation Hall, University of Toronto')
+              .card-overlay
+                h4 Route 10
+                h5 Back to School
+            .route-card-back
+              h4 Route 10
+              h5 Back to School
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1229595118') 8K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1229601598') 10K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1229613427') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/11.jpg', alt='Kensington Market, Toronto')
+              .card-overlay
+                h4 Route 11
+                h5 Foodie Route
+            .route-card-back
+              h4 Route 11
+              h5 Foodie Route
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/1244281168') 8K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/1244286142') 10K
+                li
+                  a(href='http://www.mapmyrun.com/routes/view/1244289844') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/12.jpg', alt='Mike running south on Broadview Avenue, with the skyline behind him')
+              .card-overlay
+                h4 Route 12
+                h5 G-Unit Route 2
+            .route-card-back
+              h4 Route 12
+              h5 G-Unit Route 2
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='https://docs.wixstatic.com/ugd/b48b29_68732061830a4b639563bcc96406bb84.pdf') 6K
+                li
+                  a(href='https://docs.wixstatic.com/ugd/b48b29_4def852943de45c693efb6555e344877.pdf') 10K
+                li
+                  a(href='https://docs.wixstatic.com/ugd/b48b29_7658a17b154f47d692fdd715de066af3.pdf') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/13.jpg', alt="Running Rats passing the thimble sculpture commemorating Toronto's old Garment District")
+              .card-overlay
+                h4 Route 13
+                h5 The Thimble Route
+            .route-card-back
+              h4 Route 13
+              h5 The Thimble Route
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1558179871') 7K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1558174222') 10K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1558181758') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='#') Download
+          .route-card
+            .route-card-front
+              img(src='./images/14.jpg', alt="Trillium Park, on Toronto's western waterfront")
+              .card-overlay
+                h4 Route 14
+                h5 Trillium Park
+            .route-card-back
+              h4 Route 14
+              h5 Trillium Park
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1642330073') 7K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1641507404') 10K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1641511616') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/14.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/15.jpg', alt="Puente de Luz bridge, in Toronto's Cityplace neighbourhood")
+              .card-overlay
+                h4 Route 15
+                h5 Puente de Luz
+            .route-card-back
+              h4 Route 15
+              h5 Puente de Luz
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1952517437') 7K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1952512553') 10K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/1952602226') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/15.pdf') Download
+          .route-card
+            .route-card-front
+              img(src='./images/16.jpg', alt="The crazy house covered in doll heads in Toronto's east end")
+              .card-overlay
+                h4 Route 16
+                h5 The Dollhouse
+            .route-card-back
+              h4 Route 16
+              h5 The Dollhouse
+              h6 MapMyRun Links:
+              ul.route-links
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/2297598874') 8K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/2297591560') 10K
+                li
+                  a(href='https://www.mapmyrun.com/routes/view/2297600062') 13K
+              h6 Route Sheet:
+              p
+                a.download-link(href='./docs/16.pdf') Download
+  footer
+    .wrapper.footer-wrapper
+      ul.footer-social-links
+        li
+          a(href='https://twitter.com/runningrats')
+            i.fab.fa-twitter
+            span.visually-hidden Twitter
+        li
+          a(href='https://www.facebook.com/groups/RunningRatsMembers/')
+            i.fab.fa-facebook-f
+            span.visually-hidden Facebook
+        li
+          a(href='https://www.instagram.com/runningratsto/')
+            i.fab.fa-instagram
+            span.visually-hidden Instagram
+        li
+          a(href='https://www.strava.com/clubs/runningrats')
+            i.fab.fa-strava
+            span.visually-hidden Strava
+      .footer-copyright
+        | Copyright © Running Rats Run Club.
+      .footer-sponsor
+        figure
+          figcaption Sponsored by:
+          img(src='./images/rrlogo.png', alt='Running Room logo')

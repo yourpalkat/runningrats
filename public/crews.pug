@@ -1,0 +1,206 @@
+extends head.pug
+
+block title
+  title Running Rats Run Club | Rat Tuesdays
+
+block content
+  .topline-navbar
+    .wrapper
+      nav
+        .hamburger
+          i.fas.fa-bars
+          span.visually-hidden Menu
+        ul.main-menu
+          li.exit-responsive
+            i.fas.fa-times
+            span.visually-hidden Close
+          li.home-link
+            a.header-nav-link(href='index.pug') home
+          li
+            a.header-nav-link(href='about.pug')
+              | about 
+              span.light the rats
+          li
+            a.header-nav-link(href='tuesday.pug')
+              span.light tuesday
+              |  runs
+          li.nav-logo
+            a.header-home-link(href='index.pug')
+              .nav-spacer
+          li
+            a.header-nav-link(href='crews.pug')
+              span.light run
+              |  crews
+          li
+            a.header-nav-link(href='contact.pug')
+              | contact 
+              span.light us
+  main
+    section.med-blue.first-section
+      .wrapper
+        h2.white-text
+          span.light Run Crew
+          |  Calendar
+        p.intro-text
+          | Many hands make light work. We rotate the duties of choosing the routes and doing the weekly announcements so we only have to do it once every couple of months. Here are the teams that are coming up next in the rotation:
+        .crew-table-wrap
+    section.light-blue
+      .wrapper
+        .crew-wrapper
+          .left-column
+            h3
+              span.light Weekly
+              |  Crews
+            p
+              span.bold 1. B.E.E.R.:
+              |  Doug (C), Sam, Brooke, Rob
+            p
+              span.bold 2. Spirit:
+              |  Jackey (C), Terry, Josh P, Mike C
+            p
+              span.bold 3. FOOD:
+              |  Mike L (C), Rhonda, Selina, Simon C
+            p
+              span.bold 4. Hottawa:
+              |  Jeffrey (C), Barbie, Phil, Gicela
+            p
+              span.bold 5. Swag:
+              |  Steve O (C), Véronique, Paul
+            p
+              span.bold 6. G-Unit:
+              |  Ray (C), Quin, Ryan
+            p
+              span.bold 7. #cotton:
+              |  Derek (C), Mark, Marcus, Colin
+            p
+              span.bold 8. Scrambled Legs:
+              |  Emma (C), Julian, Charlie, James
+            p
+              span.bold ModeRATe Pacers:
+              |  Linda, Ginny, Julie
+            p.italic.small-text (C) denotes team captain
+          .column
+            h3 Communications
+            p
+              span.bold Email: 
+              | Mike L, Julie, Charlene
+            p
+              span.bold Membership: 
+              | Jackey
+            p
+              span.bold Facebook: 
+              | Mike L
+            p
+              span.bold Twitter & Insta: 
+              | Selina
+            p
+              span.bold Website: 
+              | Derek
+          .column
+            h3 Events
+            p
+              span.bold Sporting Life: 
+              | Ian
+            p
+              span.bold Monthly Socials: 
+              | Rhonda
+            p
+              span.bold Race Socials: 
+              | Mike L
+            p
+              span.bold Anniversary: 
+              | Mike L
+            p
+              span.bold Christmas Party: 
+              | Rhonda
+    section.white
+      .wrapper
+        h3
+          span.light Running Rats
+          |  Crew Guide
+        h4 Introduction
+        p
+          | This guide is intended to provide a guide for new Run Crews, so that their first Rat Tuesday will flow successfully. It is also helpful as a refresher for existing Run Crews.
+        p
+          | No experience is needed to be on a Run Crew, merely the desire to help the Rats community and an abundance of energy and humour. This guide will help you understand the fundamentals that make a Rat Tuesday what it is, how to prepare before the event to make sure everything runs smoothly, and some pointers on what to remember on Tuesday evening. The bottom line whenever you’re volunteering is: have fun! While our primary focus is on running, it’s the spirit of the Rats that sets us apart from the other run groups in town.
+        h4 Fundamentals
+        p
+          | The biggest benefit of having so many eager volunteers is the new ideas that each Run Crew brings to the table. If every Rat Tuesday is exactly the same, the appeal will quickly drop for our members. At the same time, for many, Rat Tuesday is an important part of their training routine and they want to know that the run will offer them what they expect as part of their training plan. We also want to ensure that the RunningRats maintain a uniqueness that stands out in the running community. For these reasons, we ask that every Rat Tuesday should at least maintain the following fundamentals:
+        ul.body-list
+          li
+            | Provide three available distances of 7-8K, 10-11K, 12-14K. If you use route sheets from the RunningRats box, please replace any sheets that are taken.
+          li
+            | Ensure the evening starts promptly at 6:15pm. Crew should arrive by 6:00 to get ready and sign in new runners, announcements and route call starts at 6:15, and the run starts at 6:25.
+          li
+            | Welcome new runners as they arrive and have them compete the yellow waiver form and mark their first run on the white sign-in sheet. Returning runners should mark off their second and third runs on the white sheet. Make sure the new runners have a route map and try to find them a run buddy, if possible. During announcements, introduce any new runners to the group (use the list, you’ll have their names). Please put the RunningRats box back in storage before the run starts.
+          li
+            | Remember the Friendly First Kilometre and the Moderate Pacer. Remind everyone to take the first km as a slow warmup and to talk to one person who they don’t usually run with during that time. Announce the location of the 1km mark. The moderate pacer can be assigned by the Moderate Pace Crew, or one of the members of the Run Crew. The Moderate Pacer should run the shortest route option and ensure that everyone makes it back to the store.
+          li
+            | Where possible try to announce where routes branch off based on distance during the run. If you can, it's even better to assign each member of the Run Crew to lead each distance.
+          li
+            | Your pre-run announcements should cover these core items, but feel free to add anything else that will make it fun and interesting:
+            ul.body-list
+              li Welcome new members, by name
+              li Ask about and celebrate recent races completed by members
+              li Announce upcoming races
+              li
+                | Announce upcoming Rats events - socials, etc. The weekly email is a good source of info for this part.
+              li Remind folks of the friendly first km and identify the moderate pacer
+              li Route call. Describe the route and hand out maps to anyone who needs one
+          li
+            | On return: Please make sure anyone who has not yet run three times has marked their run on the sign-up sheet. Make sure any spare maps, sign-up sheets, etc. are returned to the RunningRats box and that it is put away in the back of the store.
+        h4 Choosing Routes
+        p
+          | Probably the most important part of organizing a Rat Tuesday is to have clear routes for others to follow. The email coordinator will need your route selection by the Sunday before Rat Tuesday, so they can send the weekly email out in time.
+        p
+          | The easiest way to pick a route is to select one directly from the Rats website. In the crew calendar on the website, the routes selected by previous crews are listed, so you can avoid a route that was run recently. Please make sure only to use the trail/lake/valley routes when we are on Daylight Savings Time, as otherwise they are too dark and quiet for safety. Also, review the route for any new street changes or temporary roadblocks and construction enroute.
+        p
+          | Please print and bring ten copies of each distance to replenish any maps taken from the box. Also note that some of the older routes on the website need to be printed in colour to show the route clearly. (If you don’t have a colour printer, you can always use a highlighter to mark the routes on each b&w copy).
+        p
+          | If you are planning a new route, we would recommend planning your routes two weeks in advance. If you would like someone to help you create routes then there are various people who will help, just ask (preferably at least a week in advance). There is plenty of good software that can be used to map the route and calculate distances. All the Rats maps are stored in MapMyRun and they can be accessed from the “Tuesday Runs” page.
+        | 				​
+        p
+          | Focus on the simple. Routes that work best are those that can be explained quickly within a few minutes and will easily be remembered by everyone while running. Runners can have notoriously short attention spans and memories, especially when running hard! When designing a route think about the following pointers:
+        ul.body-list
+          li
+            | Security is the number one concern: Pick routes that are well lit and have a reasonable amount of pedestrian/vehicular traffic. (Ask yourself if I would feel comfortable as a woman if I had to drop back from the group and had to walk back alone in this area). In particular, routes along the lake in winter (outside of the absolute core) are usually too dark; routes east of Yonge Street through certain neighbourhoods, especially in the dark, should be selected with caution.
+          li
+            | Be careful to avoid routes that get too close to special events, often roads are closed and the weight of crowds makes the route difficult to follow.
+          li
+            | The fewer turns the better; routes that are too complicated get people lost. Frequent turns or even frequent traffic lights / crossroads can stop people getting into their rhythm. Often well-lit side roads with four way stops are ideal for runners, as they often allow for continuous running.
+          li
+            | Uncontrolled busy intersections can be dangerous to cross, especially in the dark. An example is Bathurst and Wellington. Try to avoid these, if possible.
+          li
+            | It also helps to have someone “proofread” your route, to point out any trouble spots or suggest improvements.
+        p
+          | Having said all of this, creating a route starting from the downtown core of 7 – 14K without traffic lights that allows you to run consistently and is interesting and new, is impossible!, so be realistic about what is achievable.
+        p
+          | Fellow Run Crews should be the first to be supportive of others attempts to create new routes. Not all can be the best; please be positive on the run with others, allowing for constructive feedback on future occasions so routes can be improved.
+        h4 Backup
+        p
+          | There are times when reasons beyond any volunteer’s control, (perhaps even at the last minute), they will not be available. This is unavoidable; the important thing is to be prepared. The Run Crews are normally sized between 3-4 people to allow some bench depth to accommodate this. If you find your crew is down to two or less for your run, please find a volunteer to help out. If needed, the email coordinator can help spread the word that help or backup is needed. This should be done by the Saturday before the run, to allow others time to respond and be prepared.
+  footer
+    .wrapper.footer-wrapper
+      ul.footer-social-links
+        li
+          a(href='https://twitter.com/runningrats')
+            i.fab.fa-twitter
+            span.visually-hidden Twitter
+        li
+          a(href='https://www.facebook.com/groups/RunningRatsMembers/')
+            i.fab.fa-facebook-f
+            span.visually-hidden Facebook
+        li
+          a(href='https://www.instagram.com/runningratsto/')
+            i.fab.fa-instagram
+            span.visually-hidden Instagram
+        li
+          a(href='https://www.strava.com/clubs/runningrats')
+            i.fab.fa-strava
+            span.visually-hidden Strava
+      .footer-copyright
+        | Copyright © Running Rats Run Club.
+      .footer-sponsor
+        figure
+          figcaption Sponsored by:
+          img(src='./images/rrlogo.png', alt='Running Room logo')
