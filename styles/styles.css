@@ -972,7 +972,8 @@ footer {
   min-height: 250px;
 }
 
-.route-card:hover .route-card-front {
+.route-card:hover .route-card-front,
+.route-card:active .route-card-front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
@@ -1007,6 +1008,7 @@ footer {
 
 .card-overlay {
   position: absolute;
+  pointer-events: none;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

@@ -30,7 +30,8 @@
 .route-card {
 	position: relative;
 	min-height: 250px;
-	&:hover .route-card-front {
+	&:hover .route-card-front,
+	&:active .route-card-front {
 		transform: rotateY(-180deg);
 	}
 	&:hover .route-card-back {
@@ -64,6 +65,7 @@
 
 .card-overlay {
 	position: absolute;
+	pointer-events: none;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);

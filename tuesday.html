@@ -9,22 +9,24 @@
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-	<div class="topline-navbar">
-		<div class="wrapper">
-			<nav>
-				<div class="hamburger"><i class="fas fa-bars"></i><span class="visually-hidden">Menu</span></div>
-				<ul class="main-menu">
-					<li class="exit-responsive"><i class="fas fa-times"></i><span class="visually-hidden">Close</span></li>
-					<li class="home-link"><a href="index.html" class="header-nav-link">home</a></li>
-					<li><a href="about.html" class="header-nav-link">about <span class="light">the rats</span></a></li>
-					<li><a href="tuesday.html" class="header-nav-link"><span class="light">tuesday</span> runs</a></li>
-					<li class="nav-logo"><a href="index.html" class="header-home-link"><div class="nav-spacer"></div></a></li>
-					<li><a href="crews.html" class="header-nav-link"><span class="light">run</span> crews</a></li>
-					<li><a href="contact.html" class="header-nav-link">contact <span class="light">us</span></a></li>
-				</ul>
-			</nav>
+	<header>
+		<div class="topline-navbar">
+			<div class="wrapper">
+				<nav>
+					<div class="hamburger"><i class="fas fa-bars"></i><span class="visually-hidden">Menu</span></div>
+					<ul class="main-menu">
+						<li class="exit-responsive"><i class="fas fa-times"></i><span class="visually-hidden">Close</span></li>
+						<li class="home-link"><a href="index.html" class="header-nav-link">home</a></li>
+						<li><a href="about.html" class="header-nav-link">about <span class="light">the rats</span></a></li>
+						<li><a href="tuesday.html" class="header-nav-link"><span class="light">tuesday</span> runs</a></li>
+						<li class="nav-logo"><a href="index.html" class="header-home-link"><div class="nav-spacer"></div></a></li>
+						<li><a href="crews.html" class="header-nav-link"><span class="light">run</span> crews</a></li>
+						<li><a href="contact.html" class="header-nav-link">contact <span class="light">us</span></a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-	</div>
+	</header>
 
 	<main>
 		<section class="med-blue first-section">
@@ -650,7 +652,8 @@
 		   		// toggle class show on the menu
 		   		$('.main-menu').toggleClass('show');
 		   	});
-	  	});
+			});
+			document.addEventListener("touchstart", function () { }, false);
 	  </script>
 </body>
 </html>
