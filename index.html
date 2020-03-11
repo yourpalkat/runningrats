@@ -7,8 +7,8 @@
 	<title>Running Rats Run Club | Toronto, Canada</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Oswald:300,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
+	<!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css"> -->
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -30,11 +30,11 @@
 			</div>
 		</div>
 
-		<div class="main-carousel">
+		<!-- <div class="main-carousel">
 		  <div class="carousel-cell"><img src="images/banner-1.jpg" alt="A large group of the Running Rats, heading west on Wellington in the summer sunset"></div>
 		  <div class="carousel-cell"><img src="images/banner-2.jpg" alt="Two runners headed north on the Puente de Luz bridge, framed symmetrically by the bridge and towers behind them"></div>
 		  <div class="carousel-cell"><img src="images/banner-3.jpg" alt="A group of the Running Rats crossing Spadina Avenue westbound, shot from a low angle and framed by the wide street behind"></div>
-		</div>
+		</div> -->
 		
 		<div class="wrapper headline-wrapper">
 			<h1>Running Rats <span class="light">Toronto</span></h1>
@@ -124,25 +124,25 @@
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+  <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+  <!-- <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script> -->
   <script type="text/javascript" src="js/spectragram.min.js"></script>
   <script>
 		// document ready
   	$(function() {
   		// setup for the hero image carousel in the header
-			let $carousel = $('.main-carousel');
+			// let $carousel = $('.main-carousel');
 			
 			// bind event listener first
-			$carousel.on( 'ready.flickity', function() {
-			});
+			// $carousel.on( 'ready.flickity', function() {
+			// });
 
 			// initialize Flickity
-			$carousel.flickity({
-				prevNextButtons: false,
-				autoPlay: 5000,
-				fade: true
-			});
+			// $carousel.flickity({
+			// 	prevNextButtons: false,
+			// 	autoPlay: 5000,
+			// 	fade: true
+			// });
 
 				// trying to force it to re-paint to fix a weird issue where sometimes the gallery won't display on first load
 				// $('.main-carousel').flickity('resize');

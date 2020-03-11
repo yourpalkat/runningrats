@@ -1,10 +1,3 @@
-@media (max-width: 700px) {
-	.main-carousel img {
-		height: 200px;
-		max-width: unset;
-	}
-}
-
 @media (max-width: 650px) {
 	// TYPOGRAPHY STARTS 
 	p, .body-list {
@@ -75,6 +68,12 @@
 }
 
 @media (max-width: 768px) {
+	header {
+		min-height: 260px;
+		max-width: unset;
+		background-position: center;
+	}
+
 	.gallery {
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -219,9 +218,6 @@
 
 
 @media (max-width: 380px) {
-	h1 {
-		font-size: 2.0rem;
-	}
 
 	h2 {
 		font-size: 1.85rem;

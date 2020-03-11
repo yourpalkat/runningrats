@@ -756,6 +756,11 @@ nav ul {
 header {
   position: relative;
   margin-top: 30px;
+  min-height: 28vw;
+  max-height: 410px;
+  background-image: url("../images/banner-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .headline-wrapper {
@@ -766,35 +771,7 @@ header {
           transform: translateX(-50%);
 }
 
-.main-carousel {
-  min-height: 28vw;
-  max-height: 410px;
-}
-
-.main-carousel img {
-  min-width: 100vw;
-}
-
 /* position dots in carousel */
-.flickity-page-dots {
-  bottom: -22px;
-  z-index: 40;
-}
-
-/* circles */
-.flickity-page-dots .dot {
-  width: 8px;
-  height: 8px;
-  opacity: 1;
-  background: transparent;
-  border: 2px solid #2f83e0;
-}
-
-/* fill-in selected dot */
-.flickity-page-dots .dot.is-selected {
-  background: #2f83e0;
-}
-
 footer {
   background-color: #102f57;
   padding: 10px 0;
@@ -1274,13 +1251,6 @@ footer {
   color: #1d4988;
 }
 
-@media (max-width: 700px) {
-  .main-carousel img {
-    height: 200px;
-    max-width: unset;
-  }
-}
-
 @media (max-width: 650px) {
   p, .body-list {
     font-size: 1rem;
@@ -1334,6 +1304,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header {
+    min-height: 260px;
+    max-width: unset;
+    background-position: center;
+  }
   .gallery {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -1503,9 +1478,6 @@ footer {
 }
 
 @media (max-width: 380px) {
-  h1 {
-    font-size: 2.0rem;
-  }
   h2 {
     font-size: 1.85rem;
   }
