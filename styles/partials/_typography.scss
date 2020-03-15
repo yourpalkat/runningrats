@@ -111,6 +111,15 @@ h6 {
 	color: #ffffff;
 	line-height: 1.6;
 }
+.announcement-text {
+	font-size: 1.25rem;
+	font-weight: 300;
+	color: $dkblue;
+	line-height: 1.6;
+}
+.announcement-text a {
+	color: $mdblue;
+}
 
 .light {
 	font-weight: 300;

@@ -336,6 +336,17 @@ h6 {
   line-height: 1.6;
 }
 
+.announcement-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #102f57;
+  line-height: 1.6;
+}
+
+.announcement-text a {
+  color: #1d4988;
+}
+
 .light {
   font-weight: 300;
 }
@@ -662,6 +673,13 @@ a, .crew-table, .gallery-item:after {
   line-height: 1.6;
 }
 
+.alert {
+  background-color: #e1edfa;
+  border-radius: 10px;
+  padding: 25px 40px;
+  margin-bottom: 50px;
+}
+
 .insta-embed {
   background-color: #e1edfa;
   padding: 25px;
@@ -676,6 +694,38 @@ a, .crew-table, .gallery-item:after {
 .insta-photo img {
   width: 100%;
   height: 100%;
+}
+
+.long-cta {
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin: 5px auto 15px;
+  width: 80%;
+  background-color: #1d4988;
+}
+
+.long-cta p {
+  text-align: center;
+  margin: 0;
+}
+
+.long-cta a {
+  color: white;
+  letter-spacing: 1px;
+  font-size: .8rem;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-text-decoration-color 0.3s ease;
+  transition: -webkit-text-decoration-color 0.3s ease;
+  transition: text-decoration-color 0.3s ease;
+  transition: text-decoration-color 0.3s ease, -webkit-text-decoration-color 0.3s ease;
+}
+
+.long-cta a:hover,
+.long-cta a:focus {
+  -webkit-text-decoration-color: #ffffff;
+          text-decoration-color: #ffffff;
 }
 
 .topline-navbar {
@@ -753,7 +803,7 @@ nav ul {
   display: none;
 }
 
-header {
+.homepage-header {
   position: relative;
   margin-top: 30px;
   min-height: 28vw;
@@ -1304,7 +1354,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header {
+  .homepage-header {
     min-height: 260px;
     max-width: unset;
     background-position: center;
