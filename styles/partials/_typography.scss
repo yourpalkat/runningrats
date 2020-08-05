@@ -81,7 +81,7 @@ h6 {
 	color: $mdblue;
 	text-decoration: none;
 	border-bottom: 1px dotted $mdblue;
-	&:hover {
+	&:hover, &:focus {
 		color: $ltblue;
 		border-bottom: 1px dotted $ltblue;
 	}
@@ -119,6 +119,28 @@ h6 {
 }
 .announcement-text a {
 	color: $mdblue;
+}
+
+.alert ul {
+	padding-left: 1.2rem;
+	list-style: none;
+}
+.alert ul > li + li {
+	margin-top: 0.8rem;
+}
+.alert li {
+	font-size: 1.1rem;
+	font-family: $base-font;
+	color: $bluegrey;
+	position: relative;
+}
+.alert li::before {
+	content: '•';
+	position: absolute;
+	font-size: 0.8rem;
+	color: $mdblue;
+	left: -1.2rem;
+	top: 0.1rem;
 }
 
 .light {

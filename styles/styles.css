@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -307,7 +308,7 @@ h6 {
   border-bottom: 1px dotted #1d4988;
 }
 
-.body-link:hover {
+.body-link:hover, .body-link:focus {
   color: #88b8ed;
   border-bottom: 1px dotted #88b8ed;
 }
@@ -345,6 +346,31 @@ h6 {
 
 .announcement-text a {
   color: #1d4988;
+}
+
+.alert ul {
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.alert ul > li + li {
+  margin-top: 0.8rem;
+}
+
+.alert li {
+  font-size: 1.1rem;
+  font-family: "Lato", sans-serif;
+  color: #334357;
+  position: relative;
+}
+
+.alert li::before {
+  content: '•';
+  position: absolute;
+  font-size: 0.8rem;
+  color: #1d4988;
+  left: -1.2rem;
+  top: 0.1rem;
 }
 
 .light {
@@ -1315,6 +1341,9 @@ footer {
   }
   p + .center {
     margin-top: 25px;
+  }
+  .alert li {
+    font-size: 1rem;
   }
   .two-column {
     grid-row-gap: 25px;
