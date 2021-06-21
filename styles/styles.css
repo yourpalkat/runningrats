@@ -1345,6 +1345,14 @@ footer {
   color: #1d4988;
 }
 
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
 @media (max-width: 650px) {
   p, .body-list {
     font-size: 1rem;
