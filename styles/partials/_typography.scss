@@ -89,8 +89,9 @@ h6 {
 
 .cta {
 	border-radius: 15px;
-	padding: 10px 15px;
-	margin: 5px 0 15px;
+	display: inline-block;
+	padding: 12px 20px;
+	margin: 8px 0 15px;
 
 	background-color: $mdblue;
 	color: white;
@@ -100,8 +101,8 @@ h6 {
 	text-transform: uppercase;
 	&:hover,
 	&:focus {
-		background-color: #ffffff;
-		color: $mdblue;
+		background-color: $vltblue;
+		color: $dkblue;
 	}
 }
 

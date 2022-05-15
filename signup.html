@@ -3,11 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Running Rats Run Club | Contact Us</title>
+	<title>Running Rats Run Club | About the Rats</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Oswald:300,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles/styles.css">
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 	<header>
@@ -32,35 +31,18 @@
 	<main>
 		<section class="med-blue first-section">
 			<div class="wrapper">
-
-				<h2 class="white-text"><span class="light">Contact</span> us!</h2>
-				<p class="intro-text">Questions about our weekly meet-ups? About us? About running? About astrophysics? (Well, maybe not that last one.) Please get in touch!</p>
-				<form method="POST" action="https://formspree.io/f/xknpvvod" class="contact-form">
-					<div class="input-group">
-						<label for="name" class="input-label">Please enter your name</label>
-						<input type="name" id="name" name="name" class="form-input" placeholder="Your name" required>
-					</div>
-
-					<div class="input-group">
-						<label for="_replyto" class="input-label">Please enter your email address</label>
-						<input type="email" id="_replyto" name="_replyto" class="form-input" placeholder="Email address" required>
-					</div>
-
-					<div class="input-group full-width">
-						<label for="_subject" class="input-label">Please enter a subject</label>
-						<input type="text" id="_subject" name="_subject" class="form-input" placeholder="Subject of email" required>
-					</div>
-
-					<div class="input-group full-width">
-						<label for="message" class="input-label">Please enter a message</label>
-						<textarea name="message" id="form-body" class="form-body" cols="30" rows="10" placeholder="Enter your message here!" required></textarea>
-					</div>
-
-					<button type="submit" class="submit-button">Send message</button>
-					<div class="g-recaptcha" data-sitekey="6LfPiUcbAAAAAHEFYsIbqDXTyEeXBdqawt-t2bWn"></div>
-				</form>
-
+				<h2 class="white-text"><span class="light">New Member</span> Sign-up</h2>
+				<p class="intro-text">Before running with us for the first time, please fill out this form, so we've got your contact information and an emergency contact.</p>
 			</div>
+		</section>
+
+		<section class="light-blue">
+			<div class="wrapper">
+        <div class="google-form-wrapper">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8wL1JQgF6QT1-h-BKnbSxiftbWwBwiGTit1cNVUeusF9K5A/viewform?embedded=true" width="640" height="1540" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+          </div>
+			</div>
+
 		</section>
 
 		<section class="white">
@@ -94,27 +76,27 @@
 		</div>
 	</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	  <script>
-	  	$(function() {
-		   	$('.hamburger').on('click', function(){
-		   		// toggle class show on the menu
-		   		$('.main-menu').toggleClass('show');
-		   	});
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
 
-		   	$('.exit-responsive').on('click', function(){
-		   		// toggle class show on the menu
-		   		$('.main-menu').toggleClass('show');
-		   	});
-	  	});
-	  </script>
-		<script>
-			window.onload = function () {
-				var el = document.getElementById('g-recaptcha-response');
-				if (el) {
-					el.setAttribute('required', 'required');
-				}
-			}
-		</script>
+	<script>
+    $(function() {
+    	$('[data-fancybox="gallery"]').fancybox({
+				// Options will go here
+			});
+
+			$('.hamburger').on('click', function(){
+				// toggle class show on the menu
+				$('.main-menu').toggleClass('show');
+			});
+
+			$('.exit-responsive').on('click', function(){
+				// toggle class show on the menu
+				$('.main-menu').toggleClass('show');
+			});
+    });
+	</script>
+
 </body>
 </html>

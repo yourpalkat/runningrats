@@ -137,7 +137,14 @@ a, .crew-table, .gallery-item:after {
 }
 
 .strava-embed {
-	margin: 20px 0 30px;
+	margin: 0 0 30px;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+
+	@media (max-width: 650px) {
+		justify-content: center;
+	}
 }
 
 .callout {
@@ -180,6 +187,24 @@ a, .crew-table, .gallery-item:after {
 	height: 100%;
 }
 
+.cta-light {
+	border-radius: 15px;
+	padding: 10px 20px;
+	display: inline-block;
+	background-color: $vltblue;
+	color: $dkblue;
+	font-weight: 800;
+	text-decoration: none;
+	border: 1px solid $vltblue;
+	transition: all 0.3s ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: $ltblue;
+		border-color: $dkblue;
+	}
+}
+
 .long-cta {
 	border-radius: 15px;
 	padding: 10px 15px;
@@ -203,4 +228,8 @@ a, .crew-table, .gallery-item:after {
 	& a:focus {
 		text-decoration-color: #ffffff;
 	}
+}
+
+.dkblue {
+	color: $dkblue;
 }

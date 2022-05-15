@@ -315,8 +315,9 @@ h6 {
 
 .cta {
   border-radius: 15px;
-  padding: 10px 15px;
-  margin: 5px 0 15px;
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px 0 15px;
   background-color: #1d4988;
   color: white;
   letter-spacing: 1px;
@@ -326,8 +327,8 @@ h6 {
 }
 
 .cta:hover, .cta:focus {
-  background-color: #ffffff;
-  color: #1d4988;
+  background-color: #e1edfa;
+  color: #102f57;
 }
 
 .intro-text {
@@ -691,7 +692,22 @@ a, .crew-table, .gallery-item:after {
 }
 
 .strava-embed {
-  margin: 20px 0 30px;
+  margin: 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .strava-embed {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .callout {
@@ -740,6 +756,24 @@ a, .crew-table, .gallery-item:after {
   height: 100%;
 }
 
+.cta-light {
+  border-radius: 15px;
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #e1edfa;
+  color: #102f57;
+  font-weight: 800;
+  text-decoration: none;
+  border: 1px solid #e1edfa;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-light:hover, .cta-light:focus {
+  background-color: #88b8ed;
+  border-color: #102f57;
+}
+
 .long-cta {
   border-radius: 15px;
   padding: 10px 15px;
@@ -770,6 +804,10 @@ a, .crew-table, .gallery-item:after {
 .long-cta a:focus {
   -webkit-text-decoration-color: #ffffff;
           text-decoration-color: #ffffff;
+}
+
+.dkblue {
+  color: #102f57;
 }
 
 .topline-navbar {
@@ -1267,7 +1305,7 @@ footer {
   display: block;
   color: #88b8ed;
   font-family: "Lato", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1283,12 +1321,12 @@ footer {
 
 .form-input, .form-body {
   width: 100%;
-  padding: 5px 10px;
+  padding: 10px 12px;
   border: none;
   color: #88b8ed;
   font-family: "Lato", sans-serif;
   font-style: italic;
-  font-size: 1.0rem;
+  font-size: 1.2rem;
 }
 
 .form-input::-webkit-input-placeholder, .form-body::-webkit-input-placeholder {
@@ -1335,7 +1373,9 @@ footer {
   letter-spacing: 1px;
   -ms-grid-column-align: start;
       justify-self: start;
-  padding: 10px 40px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 14px 40px;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
 }
@@ -1351,6 +1391,16 @@ footer {
   margin: -50px 0 0 0 !important;
   z-index: -999999;
   opacity: 0;
+}
+
+.google-form-wrapper {
+  margin: 24px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 650px) {
